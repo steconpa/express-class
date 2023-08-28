@@ -9,9 +9,12 @@ router.get('/', controller.index);
 router.use('/roles', require('./roles.routes'));
 
 // Rutas relacionadas con habilidades
-router.use('/habilidades', require('./skills.routes'));
+router.use('/skills', require('./skills.routes'));
 
 // Rutas relacionadas con los usuarios
-router.use('/usuarios', require('./users.routes'));
+router.use('/users', require('./users.routes'));
+
+// Rutas relacionadas con los trabajos
+router.use('/jobs', require('./jobs.routes'));
 
 module.exports = router;

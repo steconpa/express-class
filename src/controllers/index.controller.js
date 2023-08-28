@@ -1,6 +1,7 @@
 const skillController = require('./skill.controller');
 const roleController = require('./role.controller');
 const userController = require('./user.controller');
+const jobController = require('./job.controller');
 
 function index (req, res) {
     res.render('index', {
@@ -13,5 +14,6 @@ module.exports = {
     index,
     skillController,
     roleController,
-    userController
+    userController,
+    jobController
 };
